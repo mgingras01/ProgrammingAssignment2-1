@@ -20,9 +20,9 @@ makeCacheMatrix <- function(A = matrix()) {
 ## cacheSolve returns the cached inverse of matrix A (if it exists), 
 ## otherwise it generates the inverse of matrix A 
 
-cacheSolve <- function(A, ...) {
+cacheSolve <- function(A, ...) { ## I guess you replaced the x with A
         ## Return a matrix that is the inverse of 'A'
-    A1 <- A$getinv()
+    A1 <- A$getinv() 
     if(!is.null(A1)) {
       message("getting cached data")
       return(A1)
