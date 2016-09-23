@@ -61,7 +61,7 @@ cacheSolve <- function(x, ...) {
     
     # otherwise, calculate the inverse
    
-    my_data <- x$get()
+    my_data <- x$get()## I couldn't fingure out this part.  What kind of data and which data are we suppose to use? Thanks. 
     in <- solve(my_data, ...)
 
     # sets the value of the inverse in the cache via the setinverse function.
